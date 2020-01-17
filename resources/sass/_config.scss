@@ -1,0 +1,28 @@
+$primary-color: #fff;
+$secondary-color: #f4f4f4;
+
+@mixin block-link {
+  color: darken($secondary-color, 70);
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+
+  &:hover {
+    background: darken($secondary-color, 70);
+    color: $primary-color;
+  }
+}
+
+@mixin inline-link {
+  color: darken($secondary-color, 70);
+  text-decoration: none;
+  padding: 5px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin ease-out {
+  transition: all 1s ease-out;
+}

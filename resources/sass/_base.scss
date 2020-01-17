@@ -1,0 +1,85 @@
+body {
+  background: $primary-color;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoi UI', Tahoma,
+  Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+.page {
+  .main-page {
+    background: $primary-color;
+  }
+  .outer-div {
+    background: $primary-color;
+  }
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 160px 1fr 160px;
+}
+
+.header {
+  .upper-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .header-img-div {
+    margin: 40px 0;
+  }
+
+  .navbar {
+    padding: 0;
+    border-top: 1px solid darken($secondary-color, 30);
+    border-bottom: 1px solid darken($secondary-color, 60);
+
+    ul {
+      margin: auto;
+      padding-left: 0;
+      padding-right: 200px;
+      display: flex;
+      list-style-type: none;
+      justify-content: space-evenly;
+      color: darken($secondary-color, 60);
+      font-weight: 600;
+      #nav-first-item {
+        margin-left: -11px;
+      }
+      a {
+        @include block-link;
+        color: inherit;
+        margin-top: -1px;
+      }
+    }
+  }
+
+  .lower-header {
+    background: $secondary-color;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    ul {
+      list-style: none;
+    }
+
+    ul li::before {
+      content: "\2022";
+      color: darken($secondary-color, 60);
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      font-size: 0.6em;
+      margin-left: -1em;
+    }
+
+    li {
+      padding-bottom: 12px;
+      font-size: 1.2rem;
+    }
+
+    a {
+      @include inline-link;
+    }
+  }
+}
