@@ -26,3 +26,30 @@ $secondary-color: #f4f4f4;
 @mixin ease-out {
   transition: all 1s ease-out;
 }
+
+@mixin page-secondary-header {
+  color: #7d0126;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  border-bottom: 1px solid darken($secondary-color, 60);
+}
+
+@mixin custom-ul-dot {
+
+  list-style: none;
+
+  li::before {
+  content: "\2022";
+  color: darken($secondary-color, 60);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  font-size: 0.6em;
+  margin-left: -1em;
+}
+
+  li {
+    padding-bottom: 12px;
+    font-size: 1.2rem;
+  }
+}

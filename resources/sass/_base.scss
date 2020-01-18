@@ -60,26 +60,152 @@ body {
     grid-template-columns: repeat(2, 1fr);
 
     ul {
-      list-style: none;
-    }
-
-    ul li::before {
-      content: "\2022";
-      color: darken($secondary-color, 60);
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-      font-size: 0.6em;
-      margin-left: -1em;
-    }
-
-    li {
-      padding-bottom: 12px;
-      font-size: 1.2rem;
+      @include custom-ul-dot;
     }
 
     a {
       @include inline-link;
+    }
+  }
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  margin-top: 20px;
+
+  .last-news-header {
+    @include page-secondary-header;
+  }
+
+  .last-news-body {
+    padding-top: 20px;
+    font-size: 1.2em;
+    border-bottom: 1px solid darken($secondary-color, 20);
+    text-align: justify;
+
+    a {
+      @include inline-link;
+      padding: 0;
+    }
+
+    .time {
+      background: darken($secondary-color, 40);
+      color: $primary-color;
+      width: 21%;
+      height: 25%;
+      float: left;
+      margin-right: 10px;
+      font-size: 0.8em;
+    }
+  }
+}
+
+.center-main {
+  margin: 0 40px 0 40px;
+
+  .main-news-img {
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+    justify-content: center;
+
+    img {
+      width: 525px;
+      height: 325px;
+    }
+
+    .img-text {
+      position: absolute;
+      align-self: center;
+      color: $primary-color;
+      background: darken($secondary-color, 60);
+      padding: 5px;
+      font-size: 1.6em;
+
+      a {
+        @include inline-link;
+        color: $primary-color;
+      }
+    }
+  }
+
+  .main-news-header {
+    @include page-secondary-header;
+    margin-top: 10px;
+  }
+
+  .main-news-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 30px;
+
+    .content-block {
+      background: darken($secondary-color, 5);
+      .text-container {
+        padding: 5px;
+        color: darken($secondary-color, 90);
+        font-size: 1.2em;
+      }
+      width: 100%;
+      a {
+        @include inline-link;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.right-main {
+
+  .right-main-header {
+    @include page-secondary-header;
+    margin-bottom: 15px;
+
+    ul {
+      @include custom-ul-dot;
+      margin: 0;
+      padding-left: 10px;
+      li::before {
+        color: red;
+      }
+      li {
+        padding: 0;
+      }
+    }
+  }
+
+  .right-main-body {
+    p {
+      margin: 0;
+      margin-bottom: 20px;
+      a {
+        @include inline-link;
+        padding: 0;
+      }
+    }
+
+    .content-block {
+      display: grid;
+      grid-template-columns: 10% 90%;
+
+      .left-block {
+        background: darken($secondary-color, 5);
+        font-size: 2.1em;
+        text-align: center;
+        color: darken($secondary-color, 50);
+      }
+      .right-block {
+        padding: 10px;
+        background: darken($secondary-color, 2);
+        a {
+          @include inline-link;
+          padding: 0;
+        }
+      }
     }
   }
 }

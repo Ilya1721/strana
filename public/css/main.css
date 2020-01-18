@@ -86,7 +86,7 @@ body {
   margin-left: -1em;
 }
 
-.header .lower-header li {
+.header .lower-header ul li {
   padding-bottom: 12px;
   font-size: 1.2rem;
 }
@@ -99,5 +99,217 @@ body {
 
 .header .lower-header a:hover {
   text-decoration: underline;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  margin-top: 20px;
+}
+
+.main-content .last-news-header {
+  color: #7d0126;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  border-bottom: 1px solid #5b5b5b;
+}
+
+.main-content .last-news-body {
+  padding-top: 20px;
+  font-size: 1.2em;
+  border-bottom: 1px solid #c1c1c1;
+  text-align: justify;
+}
+
+.main-content .last-news-body a {
+  color: #424141;
+  text-decoration: none;
+  padding: 5px;
+  padding: 0;
+}
+
+.main-content .last-news-body a:hover {
+  text-decoration: underline;
+}
+
+.main-content .last-news-body .time {
+  background: #8e8e8e;
+  color: #fff;
+  width: 21%;
+  height: 25%;
+  float: left;
+  margin-right: 10px;
+  font-size: 0.8em;
+}
+
+.center-main {
+  margin: 0 40px 0 40px;
+}
+
+.center-main .main-news-img {
+  display: -webkit-box;
+  display: flex;
+  margin-top: 10px;
+  position: relative;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.center-main .main-news-img img {
+  width: 525px;
+  height: 325px;
+}
+
+.center-main .main-news-img .img-text {
+  position: absolute;
+  align-self: center;
+  color: #fff;
+  background: #5b5b5b;
+  padding: 5px;
+  font-size: 1.6em;
+}
+
+.center-main .main-news-img .img-text a {
+  color: #424141;
+  text-decoration: none;
+  padding: 5px;
+  color: #fff;
+}
+
+.center-main .main-news-img .img-text a:hover {
+  text-decoration: underline;
+}
+
+.center-main .main-news-header {
+  color: #7d0126;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  border-bottom: 1px solid #5b5b5b;
+  margin-top: 10px;
+}
+
+.center-main .main-news-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-top: 30px;
+}
+
+.center-main .main-news-body .content-block {
+  background: #e7e7e7;
+  width: 100%;
+}
+
+.center-main .main-news-body .content-block .text-container {
+  padding: 5px;
+  color: #0f0e0e;
+  font-size: 1.2em;
+}
+
+.center-main .main-news-body .content-block a {
+  color: #424141;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.center-main .main-news-body .content-block a:hover {
+  text-decoration: underline;
+}
+
+.center-main .main-news-body .content-block img {
+  width: 100%;
+}
+
+.right-main .right-main-header {
+  color: #7d0126;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  border-bottom: 1px solid #5b5b5b;
+  margin-bottom: 15px;
+}
+
+.right-main .right-main-header ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.right-main .right-main-header ul li::before {
+  content: "\2022";
+  color: #5b5b5b;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  font-size: 0.6em;
+  margin-left: -1em;
+}
+
+.right-main .right-main-header ul li {
+  padding-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.right-main .right-main-header ul li::before {
+  color: red;
+}
+
+.right-main .right-main-header ul li {
+  padding: 0;
+}
+
+.right-main .right-main-body p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.right-main .right-main-body p a {
+  color: #424141;
+  text-decoration: none;
+  padding: 5px;
+  padding: 0;
+}
+
+.right-main .right-main-body p a:hover {
+  text-decoration: underline;
+}
+
+.right-main .right-main-body .content-block {
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+
+.right-main .right-main-body .content-block .left-block {
+  background: #e7e7e7;
+  font-size: 2.1em;
+  text-align: center;
+  color: #757474;
+}
+
+.right-main .right-main-body .content-block .right-block {
+  padding: 10px;
+  background: #efefef;
+}
+
+.right-main .right-main-body .content-block .right-block a {
+  color: #424141;
+  text-decoration: none;
+  padding: 5px;
+  padding: 0;
+}
+
+.right-main .right-main-body .content-block .right-block a:hover {
+  text-decoration: underline;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.fs-3 {
+  font-size: 1.3em;
+}
+
+.fw-3 {
+  font-weight: 500;
 }
 
