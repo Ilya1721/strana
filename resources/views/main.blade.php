@@ -96,8 +96,10 @@
           </div>
           <div class="center-main">
             <div class="main-news-img">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxc0XbqZCcIDmAZp8CESWLrlH3FinbMwIrRNeFlolh_m7ltYaU&s"
-              alt="news1">
+              <a href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxc0XbqZCcIDmAZp8CESWLrlH3FinbMwIrRNeFlolh_m7ltYaU&s"
+                alt="news1">
+              </a>
               <div class="img-text">
                 <a href="#">
                   In tempor adipisicing
@@ -110,7 +112,9 @@
             <div class="main-news-body">
               @for($i = 0; $i < 8; $i++)
               <div class="content-block">
-                <img src="img/news2.jfif">
+                <a href="#">
+                  <img src="img/news2.jfif">
+                </a>
                 <h3>
                   <a href="#">Lorem ipsum dolor</a>
                 </h3>
@@ -175,6 +179,72 @@
             </div>
           </div>
         </main>
+        <footer>
+          <div class="footer-header">
+            Лента соцсетей
+          </div>
+          <div class="footer-body">
+            @for($i = 0; $i < 4; $i++)
+            <div class="content-block">
+              <a href="#">
+                <img src="https://strana.ua/img/article/2454/69_tn.jpeg">
+              </a>
+              <div>
+                <span class="text-grey">
+                  Эдуард Долинский
+                </span>
+                <p class="text-bold">
+                  <a href="#">
+                    Для Вятровича, поездка в
+                    Иерусалим - унижение Украины
+                  </a>
+                </p>
+                <p>
+                  Ему неприятно, что Зеленский
+                  будет представлять там украинских
+                  освободителей
+                </p>
+              </div>
+            </div>
+            @endfor
+          </div>
+          <div class="footer-header">
+            Деньги
+          </div>
+          <div class="footer-body">
+            @for($i = 0; $i < 4; $i++)
+            <div class="content-block-reverse">
+              <a href="#">
+                <img src="img/news3.jpg">
+              </a>
+              <p>
+                <a href="#">
+                  "Денег привалило". Компании получили
+                  выплаты по НДС и опустили курс гривни
+                </a>
+              </p>
+            </div>
+            @endfor
+          </div>
+          <div class="footer-header">
+            Выбор страны
+          </div>
+          <div class="footer-body">
+            @for($i = 0; $i < 4; $i++)
+            <div class="content-block-reverse">
+              <a href="#">
+                <img src="img/news3.jpg">
+              </a>
+              <p>
+                <a href="#">
+                  "Денег привалило". Компании получили
+                  выплаты по НДС и опустили курс гривни
+                </a>
+              </p>
+            </div>
+            @endfor
+          </div>
+        </footer>
       </div>
       <div class="outer-div"></div>
     </div>

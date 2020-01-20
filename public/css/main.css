@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: 'Segoi UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .page {
@@ -210,6 +211,7 @@ body {
   color: #424141;
   text-decoration: none;
   padding: 5px;
+  padding: 0;
 }
 
 .center-main .main-news-body .content-block a:hover {
@@ -298,6 +300,85 @@ body {
 }
 
 .right-main .right-main-body .content-block .right-block a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-header {
+  color: #7d0126;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  border-bottom: 1px solid #5b5b5b;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+footer .footer-body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+footer .footer-body .content-block {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 30px;
+}
+
+footer .footer-body .content-block img {
+  border-radius: 50%;
+  width: 115%;
+}
+
+footer .footer-body .content-block p {
+  text-align: left;
+  color: #333333;
+  margin: 0;
+}
+
+footer .footer-body .content-block p a {
+  color: #424141;
+  text-decoration: none;
+  padding: 5px;
+  padding: 0;
+}
+
+footer .footer-body .content-block p a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-body .content-block .text-grey {
+  color: #5b5b5b;
+}
+
+footer .footer-body .content-block .text-bold {
+  font-weight: 600;
+  color: #333333;
+}
+
+footer .footer-body .content-block-reverse {
+  margin-right: 20px;
+}
+
+footer .footer-body .content-block-reverse img {
+  width: 300px;
+  height: 200px;
+}
+
+footer .footer-body .content-block-reverse p {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #666666;
+  margin: 0;
+}
+
+footer .footer-body .content-block-reverse p a {
+  color: #424141;
+  text-decoration: none;
+  padding: 5px;
+  padding: 0;
+}
+
+footer .footer-body .content-block-reverse p a:hover {
   text-decoration: underline;
 }
 

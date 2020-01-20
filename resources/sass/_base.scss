@@ -5,6 +5,7 @@ body {
   font-family: 'Segoi UI', Tahoma,
   Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .page {
@@ -151,6 +152,7 @@ body {
       width: 100%;
       a {
         @include inline-link;
+        padding: 0;
       }
       img {
         width: 100%;
@@ -201,6 +203,61 @@ body {
       .right-block {
         padding: 10px;
         background: darken($secondary-color, 2);
+        a {
+          @include inline-link;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  .footer-header {
+    @include page-secondary-header;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .footer-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    .content-block {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 30px;
+      img {
+        border-radius: 50%;
+        width: 115%;
+      }
+      p {
+        text-align: left;
+        color: lighten(#000, 20);
+        margin: 0;
+        a {
+          @include inline-link;
+          padding: 0;
+        }
+      }
+      .text-grey {
+        color: darken($secondary-color, 60);
+      }
+      .text-bold {
+        font-weight: 600;
+        color: lighten(#000, 20);
+      }
+    }
+    .content-block-reverse {
+      margin-right: 20px;
+      img {
+        width: 300px;
+        height: 200px;
+      }
+      p {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: lighten(#000, 40);
+        margin: 0;
         a {
           @include inline-link;
           padding: 0;
