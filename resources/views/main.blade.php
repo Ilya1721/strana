@@ -1,252 +1,110 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-    <title>Laravel</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-
-  </head>
-  <body>
-    <div class="page">
-      <div class="outer-div"></div>
-      <div class="main-page">
-        <header class="header">
-          <div class="upper-header">
-            <div class="header-img-div">
-              <a href="/">
-                <img src="img/logo.png" alt="logo">
-              </a>
-            </div>
-          </div>
-          <nav class="navbar">
-            <ul>
-              <li id="nav-first-item">
-                <a href="#">Новости</a>
-              </li>
-              <li>
-                <a href="#">Статьи</a>
-              </li>
-              <li>
-                <a href="#">Интервью</a>
-              </li>
-              <li>
-                <a href="#">Лента Соцсетей</a>
-              </li>
-              <li>
-                <a href="#">Видео</a>
-              </li>
-              <li>
-                <a href="#">Атака на Страну</a>
-              </li>
-              <li>
-                <a href="#">Церковь</a>
-              </li>
-              <li>
-                <a href="#">Деньги</a>
-              </li>
-              <li>
-                <a href="#">Шоу-Бизнес</a>
-              </li>
-              <li>
-                <a href="#">Спорт</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="lower-header">
-            <div class="lower-header-content">
-              <ul>
-                <li>
-                  <a href="#">Lorem ipsum dolor sit amet, consectetur</a>
-                </li>
-                <li>
-                  <a href="#">Lorem ipsum dolor sit amet, consectetur</a>
-                </li>
-              </ul>
-            </div>
-            <div class="lower-header-content">
-              <ul>
-                <li>
-                  <a href="#">Lorem ipsum dolor sit amet, consectetur</a>
-                </li>
-                <li>
-                  <a href="#">Lorem ipsum dolor sit amet, consectetur</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </header>
-        <main class="main-content">
-          <div class="left-main">
-            <div class="last-news-header">
-              Последние новости
-            </div>
-            @for($i = 0; $i < 24; $i++)
-            <div class="last-news-body">
-              <div class="time">14:15</div>
-              <a href="#">
-                Nam singulis ita officia, et duis
-                aut export, do proident
-              </a>
-            </div>
-            @endfor
-          </div>
-          <div class="center-main">
-            <div class="main-news-img">
-              <a href="#">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxc0XbqZCcIDmAZp8CESWLrlH3FinbMwIrRNeFlolh_m7ltYaU&s"
-                alt="news1">
-              </a>
-              <div class="img-text">
-                <a href="#">
-                  In tempor adipisicing
-                </a>
-              </div>
-            </div>
-            <div class="main-news-header">
-              Главные статьи
-            </div>
-            <div class="main-news-body">
-              @for($i = 0; $i < 8; $i++)
-              <div class="content-block">
-                <a href="#">
-                  <img src="img/news2.jfif">
-                </a>
-                <h3>
-                  <a href="#">Lorem ipsum dolor</a>
-                </h3>
-                <p class="text-container">
-                  Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit
-                </p>
-              </div>
-              @endfor
-            </div>
-          </div>
-          <div class="right-main">
-            <div class="right-main-header">
-              <ul>
-                <li>Видео</li>
-              </ul>
-            </div>
-            <div class="right-main-body">
-              @for($i = 0; $i < 2; $i++)
-              <a href="#">
-                <img src="img/news2.jfif">
-              </a>
-              <p>
-                <a href="#">
-                  Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit
-                </a>
-              </p>
-              @endfor
-              <div class="right-main-header">
-                Популярное
-              </div>
-              @for($i = 0; $i < 5; $i++)
-              <div class="content-block">
-                <div class="left-block">
-                  1
-                </div>
-                <div class="right-block">
-                  <a href="#">
-                    Nam quis ne magna, laboris
-                    aliqua est fabulas
-                    transferrem, non amet duis
-                    id incididunt
-                  </a>
-                </div>
-              </div>
-              @endfor
-              <div class="right-main-header mt-10">
-                Частная жизнь
-              </div>
-              @for($i = 0; $i < 2; $i++)
-              <a href="#">
-                <img src="img/news2.jfif">
-              </a>
-              <p>
-                <a href="#" class="fs-3 fw-3">
-                  Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit
-                </a>
-              </p>
-              @endfor
-            </div>
-          </div>
-        </main>
-        <footer>
-          <div class="footer-header">
-            Лента соцсетей
-          </div>
-          <div class="footer-body">
-            @for($i = 0; $i < 4; $i++)
-            <div class="content-block">
-              <a href="#">
-                <img src="https://strana.ua/img/article/2454/69_tn.jpeg">
-              </a>
-              <div>
-                <span class="text-grey">
-                  Эдуард Долинский
-                </span>
-                <p class="text-bold">
-                  <a href="#">
-                    Для Вятровича, поездка в
-                    Иерусалим - унижение Украины
-                  </a>
-                </p>
-                <p>
-                  Ему неприятно, что Зеленский
-                  будет представлять там украинских
-                  освободителей
-                </p>
-              </div>
-            </div>
-            @endfor
-          </div>
-          <div class="footer-header">
-            Деньги
-          </div>
-          <div class="footer-body">
-            @for($i = 0; $i < 4; $i++)
-            <div class="content-block-reverse">
-              <a href="#">
-                <img src="img/news3.jpg">
-              </a>
-              <p>
-                <a href="#">
-                  "Денег привалило". Компании получили
-                  выплаты по НДС и опустили курс гривни
-                </a>
-              </p>
-            </div>
-            @endfor
-          </div>
-          <div class="footer-header">
-            Выбор страны
-          </div>
-          <div class="footer-body">
-            @for($i = 0; $i < 4; $i++)
-            <div class="content-block-reverse">
-              <a href="#">
-                <img src="img/news3.jpg">
-              </a>
-              <p>
-                <a href="#">
-                  "Денег привалило". Компании получили
-                  выплаты по НДС и опустили курс гривни
-                </a>
-              </p>
-            </div>
-            @endfor
-          </div>
-        </footer>
-      </div>
-      <div class="outer-div"></div>
+@section('content')
+<div class="main-content">
+  <div class="left-main">
+    <div class="last-news-header">
+      Последние новости
     </div>
-  </body>
-</html>
+    @for($i = 0; $i < 24; $i++)
+    <div class="last-news-body">
+      <div class="time">14:15</div>
+      <a href="#">
+        Nam singulis ita officia, et duis
+        aut export, do proident
+      </a>
+    </div>
+    @endfor
+    <a id="all-content-link" href="#">
+      Все новости<i class="fas fa-angle-double-right arrow"></i>
+    </a>
+  </div>
+  <div class="center-main">
+    <div class="main-news-img">
+      <a href="#">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxc0XbqZCcIDmAZp8CESWLrlH3FinbMwIrRNeFlolh_m7ltYaU&s"
+        alt="news1">
+      </a>
+      <div class="img-text">
+        <a href="#">
+          In tempor adipisicing
+        </a>
+      </div>
+    </div>
+    <div class="main-news-header">
+      Главные статьи
+    </div>
+    <div class="main-news-body">
+      @for($i = 0; $i < 8; $i++)
+      <div class="content-block">
+        <a href="#">
+          <img src="img/news2.jfif">
+        </a>
+        <h3>
+          <a href="#">Lorem ipsum dolor</a>
+        </h3>
+        <p class="text-container">
+          Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit
+        </p>
+      </div>
+      @endfor
+    </div>
+    <a id="all-content-link" href="#">
+      Все статьи<i class="fas fa-angle-double-right arrow"></i>
+    </a>
+  </div>
+  <div class="right-main">
+    <div class="right-main-header">
+      <ul>
+        <li>Видео</li>
+      </ul>
+    </div>
+    <div class="right-main-body">
+      @for($i = 0; $i < 2; $i++)
+      <a href="#">
+        <img src="img/news2.jfif">
+      </a>
+      <p>
+        <a href="#">
+          Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit
+        </a>
+      </p>
+      @endfor
+      <div class="right-main-header">
+        Популярное
+      </div>
+      @for($i = 0; $i < 5; $i++)
+      <div class="content-block">
+        <div class="left-block">
+          1
+        </div>
+        <div class="right-block">
+          <a href="#">
+            Nam quis ne magna, laboris
+            aliqua est fabulas
+            transferrem, non amet duis
+            id incididunt
+          </a>
+        </div>
+      </div>
+      @endfor
+      <div class="right-main-header mt-10">
+        Частная жизнь
+      </div>
+      @for($i = 0; $i < 2; $i++)
+      <a href="#">
+        <img src="img/news2.jfif">
+      </a>
+      <p>
+        <a href="#" class="fs-3 fw-3">
+          Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit
+        </a>
+      </p>
+      @endfor
+    </div>
+  </div>
+</div>
+@endsection

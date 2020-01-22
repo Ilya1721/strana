@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('main');
 });
+Route::get('/news', 'NewsController@index');
+Route::get('/articles', 'ArticleController@index');
