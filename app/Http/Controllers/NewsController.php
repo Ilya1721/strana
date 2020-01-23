@@ -10,4 +10,9 @@ class NewsController extends Controller
     {
       return view('news');
     }
+
+    public function show()
+    {
+      return view('weather');
+    }
 }

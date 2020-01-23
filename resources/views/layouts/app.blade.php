@@ -7,7 +7,7 @@
     <title>Страна. Все новости Украины. Главные новости мира</title>
 
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/ff26e78eae.js"
      crossorigin="anonymous"></script>
@@ -29,7 +29,7 @@
           <div class="upper-header">
             <div class="header-img-div">
               <a href="/">
-                <img src="img/logo.png" alt="logo">
+                <img src="/img/logo.png" alt="logo">
               </a>
             </div>
             @for($i = 0; $i < 2; $i++)
@@ -57,28 +57,28 @@
                 <a href="/articles">Статьи</a>
               </li>
               <li>
-                <a href="#">Интервью</a>
+                <a href="/interviews">Интервью</a>
               </li>
               <li>
-                <a href="#">Лента Соцсетей</a>
+                <a href="/opinions">Лента Соцсетей</a>
               </li>
               <li>
-                <a href="#">Видео</a>
+                <a href="/videos">Видео</a>
               </li>
               <li>
-                <a href="#">Атака на Страну</a>
+                <a href="/ataka-na-stranu">Атака на Страну</a>
               </li>
               <li>
-                <a href="#">Церковь</a>
+                <a href="/church">Церковь</a>
               </li>
               <li>
-                <a href="#">Деньги</a>
+                <a href="/finance">Деньги</a>
               </li>
               <li>
-                <a href="#">Шоу-Бизнес</a>
+                <a href="/showbiz">Шоу-Бизнес</a>
               </li>
               <li>
-                <a href="#">Спорт</a>
+                <a href="/sport">Спорт</a>
               </li>
             </ul>
           </nav>
@@ -144,7 +144,7 @@
             @for($i = 0; $i < 4; $i++)
             <div class="content-block-reverse">
               <a href="#">
-                <img src="img/news3.jpg">
+                <img src="/img/news3.jpg">
               </a>
               <p>
                 <a href="#">
@@ -162,7 +162,7 @@
             @for($i = 0; $i < 4; $i++)
             <div class="content-block-reverse">
               <a href="#">
-                <img src="img/news3.jpg">
+                <img src="/img/news3.jpg">
               </a>
               <p>
                 <a href="#">
@@ -174,7 +174,7 @@
             @endfor
           </div>
           <div class="main-footer">
-            <img src="img/logo.png">
+            <img src="/img/logo.png">
             <p>
               Наши контакты: <a href="#">info@strana.ua</a>
               <a href="#">О нас</a> <a href="#">Архив материалов</a><br>

@@ -3,7 +3,7 @@
   Главное
 </div>
 <a href="#">
-  <img src="img/news2.jfif">
+  <img src="/img/news2.jfif">
 </a>
 <p>
   <a href="#">
@@ -20,7 +20,7 @@
   </ul>
 </div>
 <a href="#">
-  <img src="img/news2.jfif">
+  <img src="/img/news2.jfif">
 </a>
 <p>
   <a href="#">
@@ -28,7 +28,7 @@
     consectetur adipisicing elit
   </a>
 </p>
-<div class="header">
+<div id="popular" class="header">
   Популярное
 </div>
 @for($i = 0; $i < 5; $i++)
@@ -50,7 +50,7 @@
   Частная жизнь
 </div>
 <a href="#">
-  <img src="img/news2.jfif">
+  <img src="/img/news2.jfif">
 </a>
 <p>
   <a href="#" class="fs-3 fw-3">
