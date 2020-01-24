@@ -10,4 +10,9 @@ class OpinionController extends Controller
     {
       return view('opinions');
     }
+
+    public function show($name)
+    {
+      return view('/generated/'.$name);
+    }
 }

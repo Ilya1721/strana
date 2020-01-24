@@ -10,4 +10,9 @@ class FinanceController extends Controller
     {
       return view('finance');
     }
+
+    public function show($name)
+    {
+      return view('/generated/'.$name);
+    }
 }

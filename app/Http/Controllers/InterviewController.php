@@ -10,4 +10,9 @@ class InterviewController extends Controller
     {
       return view('interviews');
     }
+
+    public function show($name)
+    {
+      return view('/generated/'.$name);
+    }
 }

@@ -6,14 +6,14 @@
     @for($i = 0; $i < 22; $i++)
     <div class="content-block-article">
       <div>
-        <a href="#">
+        <a href="/interviews/interview1">
           <img src="img/news2.jfif">
         </a>
       </div>
       <div>
         <p class="date">Сегодня, 14:32</p>
         <p class="text">
-          <a href="#">
+          <a href="/interviews/interview1">
             У Зеленского назвали тему
             разговора в случае его
             встречи с Путиным в Израиле

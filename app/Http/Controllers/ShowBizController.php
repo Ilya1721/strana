@@ -10,4 +10,9 @@ class ShowBizController extends Controller
     {
       return view('showbiz');
     }
+
+    public function show($name)
+    {
+      return view('/generated/'.$name);
+    }
 }

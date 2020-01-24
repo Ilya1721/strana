@@ -10,4 +10,9 @@ class VideoController extends Controller
     {
       return view('videos');
     }
+
+    public function show($name) 
+    {
+      return view('/generated/'.$name);
+    }
 }

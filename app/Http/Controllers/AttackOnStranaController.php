@@ -10,4 +10,9 @@ class AttackOnStranaController extends Controller
     {
       return view('attacks');
     }
+
+    public function show($name)
+    {
+      return view('/generated/'.$name);
+    }
 }

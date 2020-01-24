@@ -10,4 +10,9 @@ class ArticleController extends Controller
     {
       return view('articles');
     }
+
+    public function show($name)
+    {
+      return view('/generated/'.$name);
+    }
 }

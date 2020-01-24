@@ -11,8 +11,8 @@ class NewsController extends Controller
       return view('news');
     }
 
-    public function show()
+    public function show($name)
     {
-      return view('weather');
+      return view('/generated/'.$name);
     }
 }

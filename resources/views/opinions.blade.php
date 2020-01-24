@@ -8,16 +8,16 @@
       @for($j = 0; $j < 2; $j++)
       <div class="inner-block">
         <div>
-          <a href="#">
+          <a href="/opinions/opinion1">
             <img src="img/news2.jfif">
           </a>
         </div>
         <div>
           <p class="text-grey">
-            <a href="#">Дмитрий Раимов</a>
+            <a href="/opinions/opinion1">Дмитрий Раимов</a>
           </p>
           <p class="text">
-            <a href="#">
+            <a href="/opinions/opinion1">
               Сгорела любая власть, что воевала
               с прессой. Во все века и во всех странах
             </a>

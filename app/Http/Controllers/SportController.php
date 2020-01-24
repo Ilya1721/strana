@@ -10,4 +10,9 @@ class SportController extends Controller
     {
       return view('sport');
     }
+
+    public function show($name)
+    {
+      return view('/generated/'.$name);
+    }
 }

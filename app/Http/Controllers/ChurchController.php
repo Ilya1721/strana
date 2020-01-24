@@ -10,4 +10,9 @@ class ChurchController extends Controller
     {
       return view('church');
     }
+
+    public function show($name)
+    {
+      return view('/generated/'.$name);
+    }
 }

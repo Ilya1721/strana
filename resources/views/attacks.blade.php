@@ -7,7 +7,7 @@
     <div class="content-block">
       <p class="date">Сегодня, 14:32</p>
       <p class="text">
-        <a href="#">
+        <a href="/ataka-na-stranu/ataka1">
           У Зеленского назвали тему
           разговора в случае его
           встречи с Путиным в Израиле
