@@ -10,7 +10,7 @@ body {
 .page {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 175px 1fr 175px;
 }
 
 .page .main-page {
@@ -352,6 +352,16 @@ body {
 }
 
 .header .navbar ul a:hover {
+  background: #424141;
+  color: #fff;
+}
+
+.header .navbar ul .selected {
+  background: #7d122e;
+  color: #fff;
+}
+
+.header .navbar ul .selected:hover {
   background: #424141;
   color: #fff;
 }

@@ -17,7 +17,7 @@ body {
   }
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 175px 1fr 175px;
 }
 
 .header {
@@ -86,6 +86,14 @@ body {
         @include block-link;
         color: inherit;
         margin-top: -1px;
+      }
+      .selected {
+        background: #7d122e;
+        color: $primary-color;
+        &:hover {
+          background: darken($secondary-color, 70);
+          color: $primary-color;
+        }
       }
     }
   }
