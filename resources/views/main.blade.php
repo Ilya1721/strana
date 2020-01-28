@@ -38,7 +38,11 @@
       @for($i = 0; $i < 8; $i++)
       <div class="content-block">
         <a href="#">
-          <img src="img/news2.jfif">
+          <picture>
+            <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
+            <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.jfif?v=1580228549137">
+            <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
+          </picture>
         </a>
         <h3>
           <a href="#">Lorem ipsum dolor</a>
@@ -63,7 +67,11 @@
     <div class="right-main-body">
       @for($i = 0; $i < 2; $i++)
       <a href="#">
-        <img src="img/news2.jfif">
+        <picture>
+          <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
+          <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.jfif?v=1580228549137">
+          <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
+        </picture>
       </a>
       <p>
         <a href="#">
@@ -95,7 +103,11 @@
       </div>
       @for($i = 0; $i < 2; $i++)
       <a href="#">
-        <img src="img/news2.jfif">
+        <picture>
+          <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
+          <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.jfif?v=1580228549137">
+          <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
+        </picture>
       </a>
       <p>
         <a href="#" class="fs-3 fw-3">

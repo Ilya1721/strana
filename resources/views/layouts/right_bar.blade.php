@@ -3,7 +3,11 @@
   Главное
 </div>
 <a href="#">
-  <img src="/img/news2.jfif">
+  <picture>
+    <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
+    <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.jfif?v=1580228549137">
+    <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
+  </picture>
 </a>
 <p>
   <a href="#">
@@ -20,7 +24,11 @@
   </ul>
 </div>
 <a href="#">
-  <img src="/img/news2.jfif">
+  <picture>
+    <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
+    <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.jfif?v=1580228549137">
+    <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
+  </picture>
 </a>
 <p>
   <a href="#">
@@ -50,7 +58,11 @@
   Частная жизнь
 </div>
 <a href="#">
-  <img src="/img/news2.jfif">
+  <picture>
+    <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
+    <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.jfif?v=1580228549137">
+    <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
+  </picture>
 </a>
 <p>
   <a href="#" class="fs-3 fw-3">
