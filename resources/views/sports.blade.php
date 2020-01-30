@@ -3,12 +3,12 @@
 @section('content')
 <div class="news-grid">
   <div class="left-side">
-    @foreach($reports as $report)
+    @foreach($sports as $sport)
     <div class="content-block">
       <p class="date">Сегодня, 14:32</p>
       <p class="text">
-        <a href="/news/{{ $report->id }}">
-          {{ $report->title }}
+        <a href="/sport/{{ $sport->id }}">
+          {{ $sport->title }}
         </a>
       </p>
     </div>

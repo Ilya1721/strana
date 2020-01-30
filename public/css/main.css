@@ -10,7 +10,7 @@ body {
 .page {
   height: 100vh;
   display: grid;
-  grid-template-columns: 175px 1fr 175px;
+  grid-template-columns: 10% 80% 10%;
 }
 
 .page .main-page {
@@ -1218,7 +1218,7 @@ footer .main-footer a:hover {
 .news-grid,
 .news-grid-inner {
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 70% 1fr;
   grid-gap: 40px;
   margin-top: 20px;
 }
@@ -2497,6 +2497,7 @@ footer .main-footer a:hover {
   text-transform: capitalize;
   border-bottom: 1px solid #5b5b5b;
   margin-bottom: 15px;
+  margin-right: 0;
 }
 
 .news-grid .right-side #popular,
@@ -2548,12 +2549,6 @@ footer .main-footer a:hover {
   padding: 0;
 }
 
-.news-grid .right-side p,
-.news-grid-inner .right-side p {
-  margin: 0;
-  text-align: justify;
-}
-
 .news-grid .right-side a,
 .news-grid-inner .right-side a {
   color: #424141;
@@ -2567,6 +2562,12 @@ footer .main-footer a:hover {
 .news-grid .right-side a:hover,
 .news-grid-inner .right-side a:hover {
   text-decoration: underline;
+}
+
+.news-grid .right-side p,
+.news-grid-inner .right-side p {
+  margin: 0;
+  text-align: justify;
 }
 
 .news-grid .right-side .content-block,
@@ -2766,7 +2767,7 @@ footer .main-footer a:hover {
 
 .news-grid-inner {
   grid-template-columns: 1fr 50% 1fr;
-  grid-gap: 100px;
+  grid-gap: 50px;
 }
 
 .mt-10 {

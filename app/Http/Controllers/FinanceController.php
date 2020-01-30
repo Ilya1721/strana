@@ -3,16 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Finance;
 
 class FinanceController extends Controller
 {
     public function index()
     {
-      return view('finance');
+      $finances = Finance::take(22)->get();
+
+      return view('finances', [
+        'finances' => $finances,
+      ]);
     }
 
-    public function show($name)
+    public function show($finance)
     {
-      return view('/generated/'.$name);
+      $finance = Finance::find($finance);
+
+      return view('finance', [
+        'finance' => $finance,
+      ]);
     }
 }

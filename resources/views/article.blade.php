@@ -21,11 +21,11 @@
   <div class="middle-side">
     <div class="content-block-news">
       <p class="header">
-      {{ $showbiz->title }}
+        {{ $article->title }}
       </p>
       <p class="date">Сегодня, 14:32</p>
       <p class="text">
-        {{ $showbiz->body }}
+        {{ $article->body }}
       </p>
     </div>
   </div>

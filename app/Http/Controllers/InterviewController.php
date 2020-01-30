@@ -3,16 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Interview;
 
 class InterviewController extends Controller
 {
     public function index()
     {
-      return view('interviews');
+      $interviews = Interview::take(22)->get();
+
+      return view('interviews', [
+        'interviews' => $interviews,
+      ]);
     }
 
-    public function show($name)
+    public function show($interview)
     {
-      return view('/generated/'.$name);
+      $interview = Interview::find($interview);
+
+      return view('interview', [
+        'interview' => $interview,
+      ]);
     }
 }

@@ -3,7 +3,7 @@
 @section('content')
 <div class="news-grid">
   <div class="left-side">
-    @for($i = 0; $i < 16; $i++)
+    @foreach($opinions as $opinion)
     <div class="content-block-opinion">
       @for($j = 0; $j < 2; $j++)
       <div class="inner-block">
@@ -18,12 +18,14 @@
         </div>
         <div>
           <p class="text-grey">
-            <a href="/opinions/opinion1">Дмитрий Раимов</a>
+            <a href="/opinions/{{ $opinion->id }}">
+              {{ $opinion->journalist->first_name}}
+               {{$opinion->journalist->last_name}}
+             </a>
           </p>
           <p class="text">
-            <a href="/opinions/opinion1">
-              Сгорела любая власть, что воевала
-              с прессой. Во все века и во всех странах
+            <a href="/opinions/{{ $opinion->id }}">
+              {{ $opinion->title }}
             </a>
           </p>
           <p class="date">cегодня</p>
@@ -31,7 +33,7 @@
       </div>
       @endfor
     </div>
-    @endfor
+    @endforeach
   </div>
   <div class="right-side">
     @yield('right_bar', View::make('layouts.right_bar'))

@@ -3,16 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Church;
 
 class ChurchController extends Controller
 {
     public function index()
     {
-      return view('church');
+      $churches = Church::take(22)->get();
+
+      return view('churches', [
+        'churches' => $churches,
+      ]);
     }
 
-    public function show($name)
+    public function show($church)
     {
-      return view('/generated/'.$name);
+      $church = Church::find($church);
+
+      return view('church', [
+        'church' => $church,
+      ]);
     }
 }

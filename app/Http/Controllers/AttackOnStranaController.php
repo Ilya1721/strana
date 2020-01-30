@@ -3,16 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\AtakaNaStranu;
 
 class AttackOnStranaController extends Controller
 {
     public function index()
     {
-      return view('attacks');
+      $attacks = AtakaNaStranu::take(22)->get();
+
+      return view('attacks', [
+        'attacks' => $attacks,
+      ]);
     }
 
-    public function show($name)
+    public function show($attack)
     {
-      return view('/generated/'.$name);
+      $attack = AtakaNaStranu::find($attack);
+
+      return view('attack', [
+        'attack' => $attack,
+      ]);
     }
 }

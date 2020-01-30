@@ -3,18 +3,16 @@
 @section('content')
 <div class="news-grid">
   <div class="left-side">
-    @for($i = 0; $i < 22; $i++)
+    @foreach($videos as $video)
     <div class="content-block">
       <p class="date">Сегодня, 14:32</p>
       <p class="text">
-        <a href="/videos/video1">
-          У Зеленского назвали тему
-          разговора в случае его
-          встречи с Путиным в Израиле
+        <a href="/videos/{{ $video->id }}">
+          {{ $video->title }}
         </a>
       </p>
     </div>
-    @endfor
+    @endforeach
   </div>
   <div class="right-side">
     @yield('right_bar', View::make('layouts.right_bar'))
