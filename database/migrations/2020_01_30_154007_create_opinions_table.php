@@ -18,6 +18,7 @@ class CreateOpinionsTable extends Migration
             $table->unsignedBigInteger('journalist_id');
             $table->string('title');
             $table->text('body');
+            $table->text('description')->nullable();
             $table->timestamp('date')->useCurrent();
         });
     }

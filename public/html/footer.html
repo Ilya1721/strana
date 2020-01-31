@@ -3,6 +3,7 @@
     Лента соцсетей
   </div>
   <div class="footer-body">
+    @foreach($footer_opinions as $footer_opinion)
     <div class="content-block">
       <a href="#">
         <picture>
@@ -16,100 +17,24 @@
           Эдуард Долинский
         </span>
         <p class="text-bold">
-          <a href="#">
-            Для Вятровича, поездка в
-            Иерусалим - унижение Украины
+          <a href="/opinions/{{ $footer_opinion->id }}">
+            {{ $footer_opinion->title }}
           </a>
         </p>
         <p>
-          Ему неприятно, что Зеленский
-          будет представлять там украинских
-          освободителей
+          {{ $footer_opinion->description }}
         </p>
       </div>
     </div>
-    <div class="content-block">
-      <a href="#">
-        <picture>
-          <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Farticle1.webp?v=1580229441558">
-          <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Farticle1.jpeg?v=1580228838463">
-          <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Farticle1.webp?v=1580229441558">
-        </picture>
-      </a>
-      <div>
-        <span class="text-grey">
-          Эдуард Долинский
-        </span>
-        <p class="text-bold">
-          <a href="#">
-            Для Вятровича, поездка в
-            Иерусалим - унижение Украины
-          </a>
-        </p>
-        <p>
-          Ему неприятно, что Зеленский
-          будет представлять там украинских
-          освободителей
-        </p>
-      </div>
-    </div>
-    <div class="content-block">
-      <a href="#">
-        <picture>
-          <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Farticle1.webp?v=1580229441558">
-          <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Farticle1.jpeg?v=1580228838463">
-          <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Farticle1.webp?v=1580229441558">
-        </picture>
-      </a>
-      <div>
-        <span class="text-grey">
-          Эдуард Долинский
-        </span>
-        <p class="text-bold">
-          <a href="#">
-            Для Вятровича, поездка в
-            Иерусалим - унижение Украины
-          </a>
-        </p>
-        <p>
-          Ему неприятно, что Зеленский
-          будет представлять там украинских
-          освободителей
-        </p>
-      </div>
-    </div>
-    <div class="content-block">
-      <a href="#">
-        <picture>
-          <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Farticle1.webp?v=1580229441558">
-          <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Farticle1.jpeg?v=1580228838463">
-          <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Farticle1.webp?v=1580229441558">
-        </picture>
-      </a>
-      <div>
-        <span class="text-grey">
-          Эдуард Долинский
-        </span>
-        <p class="text-bold">
-          <a href="#">
-            Для Вятровича, поездка в
-            Иерусалим - унижение Украины
-          </a>
-        </p>
-        <p>
-          Ему неприятно, что Зеленский
-          будет представлять там украинских
-          освободителей
-        </p>
-      </div>
-    </div>
+    @endforeach
   </div>
   <div class="footer-header">
     Деньги
   </div>
   <div class="footer-body">
+    @foreach($footer_finance_articles as $footer_finance_article)
     <div class="content-block-reverse">
-      <a href="#">
+      <a href="/articles/{{ $footer_finance_article->id }}">
         <picture>
           <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.webp?v=1580229297518">
           <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.jpg?v=1580228527324">
@@ -117,64 +42,20 @@
         </picture>
       </a>
       <p>
-        <a href="#">
-          "Денег привалило". Компании получили
-          выплаты по НДС и опустили курс гривни
+        <a href="/articles/{{ $footer_finance_article->id }}">
+          {{ $footer_finance_article->title }}
         </a>
       </p>
     </div>
-    <div class="content-block-reverse">
-      <a href="#">
-        <picture>
-          <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.webp?v=1580229297518">
-          <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.jpg?v=1580228527324">
-          <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.webp?v=1580229297518">
-        </picture>
-      </a>
-      <p>
-        <a href="#">
-          "Денег привалило". Компании получили
-          выплаты по НДС и опустили курс гривни
-        </a>
-      </p>
-    </div>
-    <div class="content-block-reverse">
-      <a href="#">
-        <picture>
-          <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.webp?v=1580229297518">
-          <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.jpg?v=1580228527324">
-          <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.webp?v=1580229297518">
-        </picture>
-      </a>
-      <p>
-        <a href="#">
-          "Денег привалило". Компании получили
-          выплаты по НДС и опустили курс гривни
-        </a>
-      </p>
-    </div>
-    <div class="content-block-reverse">
-      <a href="#">
-        <picture>
-          <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.webp?v=1580229297518">
-          <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.jpg?v=1580228527324">
-          <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.webp?v=1580229297518">
-        </picture>
-      </a>
-      <p>
-        <a href="#">
-          "Денег привалило". Компании получили
-          выплаты по НДС и опустили курс гривни
-        </a>
-      </p>
-    </div>
+    @endforeach
   </div>
   <div class="footer-header">
     Выбор страны
   </div>
   <div class="footer-body">
+    @foreach($footer_pick_articles as $footer_pick_article)
     <div class="content-block-reverse">
-      <a href="#">
+      <a href="/articles/{{ $footer_pick_article->id }}">
         <picture>
           <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.webp?v=1580229297518">
           <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.jpg?v=1580228527324">
@@ -182,57 +63,12 @@
         </picture>
       </a>
       <p>
-        <a href="#">
-          "Денег привалило". Компании получили
-          выплаты по НДС и опустили курс гривни
+        <a href="/articles/{{ $footer_pick_article->id }}">
+          {{ $footer_pick_article->title }}
         </a>
       </p>
     </div>
-    <div class="content-block-reverse">
-      <a href="#">
-        <picture>
-          <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.webp?v=1580229297518">
-          <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.jpg?v=1580228527324">
-          <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.webp?v=1580229297518">
-        </picture>
-      </a>
-      <p>
-        <a href="#">
-          "Денег привалило". Компании получили
-          выплаты по НДС и опустили курс гривни
-        </a>
-      </p>
-    </div>
-    <div class="content-block-reverse">
-      <a href="#">
-        <picture>
-          <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.webp?v=1580229297518">
-          <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.jpg?v=1580228527324">
-          <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.webp?v=1580229297518">
-        </picture>
-      </a>
-      <p>
-        <a href="#">
-          "Денег привалило". Компании получили
-          выплаты по НДС и опустили курс гривни
-        </a>
-      </p>
-    </div>
-    <div class="content-block-reverse">
-      <a href="#">
-        <picture>
-          <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.webp?v=1580229297518">
-          <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.jpg?v=1580228527324">
-          <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews3.webp?v=1580229297518">
-        </picture>
-      </a>
-      <p>
-        <a href="#">
-          "Денег привалило". Компании получили
-          выплаты по НДС и опустили курс гривни
-        </a>
-      </p>
-    </div>
+    @endforeach
   </div>
   <div class="main-footer">
     <picture>

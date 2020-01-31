@@ -6,55 +6,44 @@
     <div class="last-news-header">
       Последние новости
     </div>
-    @for($i = 0; $i < 24; $i++)
+    @foreach($reports as $report)
     <div class="last-news-body">
       <div class="time">14:15</div>
-      <a href="#">
-        Nam singulis ita officia, et duis
-        aut export, do proident
+      <a href="/news/{{ $report->id }}">
+        {{ $report->title }}
       </a>
     </div>
-    @endfor
-    <a id="all-content-link" href="#">
+    @endforeach
+    <a id="all-content-link" href="/news">
       Все новости<i class="fas fa-angle-double-right arrow"></i>
     </a>
   </div>
   <div class="center-main">
-    <div class="main-news-img">
-      <a href="#">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxc0XbqZCcIDmAZp8CESWLrlH3FinbMwIrRNeFlolh_m7ltYaU&s"
-        alt="news1">
-      </a>
-      <div class="img-text">
-        <a href="#">
-          In tempor adipisicing
-        </a>
-      </div>
-    </div>
     <div class="main-news-header">
       Главные статьи
     </div>
     <div class="main-news-body">
-      @for($i = 0; $i < 8; $i++)
+      @foreach($articles as $article)
       <div class="content-block">
-        <a href="#">
+        <a href="/articles/{{ $article->id }}">
           <picture>
             <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
             <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.jfif?v=1580228549137">
             <img src="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
           </picture>
         </a>
-        <h3>
-          <a href="#">Lorem ipsum dolor</a>
+        <h3 class="text-container">
+          <a href="/articles/{{ $article->id }}">
+            {{ $article->title }}
+          </a>
         </h3>
         <p class="text-container">
-          Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit
+          {{ $article->description }}
         </p>
       </div>
-      @endfor
+      @endforeach
     </div>
-    <a id="all-content-link" href="#">
+    <a id="all-content-link" href="/articles">
       Все статьи<i class="fas fa-angle-double-right arrow"></i>
     </a>
   </div>
@@ -65,8 +54,8 @@
       </ul>
     </div>
     <div class="right-main-body">
-      @for($i = 0; $i < 2; $i++)
-      <a href="#">
+      @foreach($videos as $video)
+      <a href="/videos/{{ $video->id }}">
         <picture>
           <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
           <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.jfif?v=1580228549137">
@@ -74,35 +63,33 @@
         </picture>
       </a>
       <p>
-        <a href="#">
-          Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit
+        <a href="/videos/{{ $video->id }}">
+          {{ $video->title }}
         </a>
       </p>
-      @endfor
+      @endforeach
       <div class="right-main-header">
         Популярное
       </div>
-      @for($i = 0; $i < 5; $i++)
+      @php($i = 1)
+      @foreach($populars as $popular)
       <div class="content-block">
         <div class="left-block">
-          1
+          {{ $i }}
         </div>
         <div class="right-block">
-          <a href="#">
-            Nam quis ne magna, laboris
-            aliqua est fabulas
-            transferrem, non amet duis
-            id incididunt
+          <a href="/news/{{ $popular->id}}">
+            {{ $popular->title }}
           </a>
         </div>
       </div>
-      @endfor
+      @php($i++)
+      @endforeach
       <div class="right-main-header mt-10">
         Частная жизнь
       </div>
-      @for($i = 0; $i < 2; $i++)
-      <a href="#">
+      @foreach($privates as $private)
+      <a href="/articles/{{ $private->id }}">
         <picture>
           <source type="image/webp" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.webp?v=1580229606675">
           <source type="image/jpeg" srcset="https://cdn.glitch.com/b44a673b-4a9b-48e5-bbac-c9c087510b1c%2Fnews2.jfif?v=1580228549137">
@@ -110,12 +97,11 @@
         </picture>
       </a>
       <p>
-        <a href="#" class="fs-3 fw-3">
-          Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit
+        <a href="/articles/{{ $private->id }}" class="fs-3 fw-3">
+          {{ $private->title }}
         </a>
       </p>
-      @endfor
+      @endforeach
     </div>
   </div>
 </div>

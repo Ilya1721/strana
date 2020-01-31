@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('main');
-});
+Route::get('/', 'MainController@index');
 Route::get('/news', 'NewsController@index');
 Route::get('/news/{report}', 'NewsController@show');
 Route::get('/articles', 'ArticleController@index');

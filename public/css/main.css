@@ -313,6 +313,7 @@ body {
 .header .upper-header .news-grid-inner .middle-side .content-block-left a,
 .news-grid-inner .middle-side .header .upper-header .content-block-left a {
   color: #7d0126;
+  margin-bottom: 50px;
 }
 
 .header .header-img-div {
@@ -513,7 +514,6 @@ body {
   font-size: 1.5em;
   text-transform: capitalize;
   border-bottom: 1px solid #5b5b5b;
-  margin-top: 10px;
 }
 
 .center-main .main-news-body {
@@ -714,6 +714,7 @@ body {
   font-size: 1.5em;
   text-transform: capitalize;
   border-bottom: 1px solid #5b5b5b;
+  margin-top: 6px;
   margin-bottom: 15px;
 }
 

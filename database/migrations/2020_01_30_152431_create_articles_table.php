@@ -17,6 +17,7 @@ class CreateArticlesTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->text('body');
+            $table->text('description')->nullable();
             $table->timestamp('date')->useCurrent();
         });
     }
