@@ -2568,7 +2568,7 @@ footer .main-footer a:hover {
 .news-grid .right-side p,
 .news-grid-inner .right-side p {
   margin: 0;
-  text-align: justify;
+  text-align: left;
 }
 
 .news-grid .right-side .content-block,
