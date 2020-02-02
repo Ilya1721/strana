@@ -11,6 +11,7 @@
         "sass": "node-sass -w resources/sass/ -o public/css/ --recursive"
     },
     "devDependencies": {
+        "@babel/preset-react": "^7.0.0",
         "axios": "^0.19",
         "browser-sync": "^2.26.7",
         "browser-sync-webpack-plugin": "^2.0.1",
@@ -19,10 +20,11 @@
         "live-server": "^1.2.1",
         "lodash": "^4.17.13",
         "node-sass": "^4.13.1",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^8.0.0",
-        "vue-template-compiler": "^2.6.11",
         "webpack": "^4.41.5",
         "webpack-dev-server": "^3.10.1"
     }
