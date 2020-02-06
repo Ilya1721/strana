@@ -9,19 +9,11 @@ class InterviewController extends Controller
 {
     public function index()
     {
-      $interviews = Interview::take(22)->get();
-
-      return view('interviews', [
-        'interviews' => $interviews,
-      ]);
+      return Interview::take(22)->get();
     }
 
-    public function show($interview)
+    public function show(Interview $interview)
     {
-      $interview = Interview::find($interview);
-
-      return view('interview', [
-        'interview' => $interview,
-      ]);
+      return $interview;
     }
 }

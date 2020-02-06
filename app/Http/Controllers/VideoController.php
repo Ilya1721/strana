@@ -9,19 +9,16 @@ class VideoController extends Controller
 {
     public function index()
     {
-      $videos = Video::take(22)->get();
-
-      return view('videos', [
-        'videos' => $videos,
-      ]);
+      return Video::take(22)->get();
     }
 
-    public function show($video)
+    public function show(Video $video)
     {
-      $video = Video::find($video);
+      return $video;
+    }
 
-      return view('video', [
-        'video' => $video,
-      ]);
+    public function right_bar()
+    {
+      return Video::take(1)->get();
     }
 }

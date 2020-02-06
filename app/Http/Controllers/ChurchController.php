@@ -9,19 +9,11 @@ class ChurchController extends Controller
 {
     public function index()
     {
-      $churches = Church::take(22)->get();
-
-      return view('churches', [
-        'churches' => $churches,
-      ]);
+      return Church::take(22)->get();
     }
 
-    public function show($church)
+    public function show(Church $church)
     {
-      $church = Church::find($church);
-
-      return view('church', [
-        'church' => $church,
-      ]);
+      return $church;
     }
 }

@@ -18,16 +18,8 @@
     </p>
     @endfor
   </div>
-  <div class="middle-side">
-    <div class="content-block-news">
-      <p class="header">
-        {{ $video->title }}
-      </p>
-      <p class="date">Сегодня, 14:32</p>
-      <p class="text">
-        {{ $video->body }}
-      </p>
-    </div>
+  <div id="video-item" class="middle-side">
+
   </div>
   <div class="right-side">
     @yield('right_bar', View::make('layouts.right_bar'))

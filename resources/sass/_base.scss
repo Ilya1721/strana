@@ -60,6 +60,13 @@ body {
         margin-bottom: 50px;
       }
     }
+
+    #headerOpinion {
+      display: inline;
+      .headerOpinion {
+        display: inline;
+      }
+    }
   }
 
   .header-img-div {
@@ -106,6 +113,10 @@ body {
 
     ul {
       @include custom-ul-dot;
+      margin: 10px;
+      li {
+        padding: 0;
+      }
     }
 
     a {
@@ -286,8 +297,8 @@ footer {
   .content-block-reverse {
     margin-right: 20px;
     img {
-      width: 300px;
-      height: 200px;
+      width: 275px;
+      height: 175px;
     }
     p {
       font-size: 1.2em;
@@ -351,20 +362,17 @@ footer {
       }
       &-opinion {
         @extend .content-block;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
         border-bottom: none;
-        margin-bottom: 35px;
         justify-content: space-between;
         .inner-block {
           display: grid;
           grid-template-columns: 20% 80%;
-          grid-gap: 60px;
+          grid-gap: 70px;
           p {
             margin: 0;
           }
           .text {
-            text-align: justify;
+            text-align: left;
             padding-right: 100px;
             a {
               color: lighten(#000, 20);
@@ -424,6 +432,12 @@ footer {
     .header {
       @include page-secondary-header;
       margin-bottom: 15px;
+    }
+    &-opinion {
+      @extend .left-side;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 50px;
     }
   }
   .middle-side {

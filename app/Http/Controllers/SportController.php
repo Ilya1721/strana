@@ -9,19 +9,11 @@ class SportController extends Controller
 {
     public function index()
     {
-      $sports = Sport::take(22)->get();
-
-      return view('sports', [
-        'sports' => $sports,
-      ]);
+      return Sport::take(22)->get();
     }
 
-    public function show($sport)
+    public function show(Sport $sport)
     {
-      $sport = Sport::find($sport);
-
-      return view('sport', [
-        'sport' => $sport,
-      ]);
+      return $sport;
     }
 }

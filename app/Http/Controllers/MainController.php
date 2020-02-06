@@ -26,4 +26,19 @@ class MainController extends Controller
         'privates' => $privates,
       ]);
     }
+
+    public function last_report()
+    {
+      return Report::take(24)->get();
+    }
+
+    public function main_article()
+    {
+      return Article::take(12)->get();
+    }
+
+    public function main_video()
+    {
+      return Video::take(2)->get();
+    }
 }

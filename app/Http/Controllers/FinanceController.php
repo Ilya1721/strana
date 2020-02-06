@@ -9,19 +9,11 @@ class FinanceController extends Controller
 {
     public function index()
     {
-      $finances = Finance::take(22)->get();
-
-      return view('finances', [
-        'finances' => $finances,
-      ]);
+      return Finance::take(22)->get();
     }
 
-    public function show($finance)
+    public function show(Finance $finance)
     {
-      $finance = Finance::find($finance);
-
-      return view('finance', [
-        'finance' => $finance,
-      ]);
+      return $finance;
     }
 }

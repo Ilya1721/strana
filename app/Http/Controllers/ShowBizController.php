@@ -9,19 +9,11 @@ class ShowBizController extends Controller
 {
     public function index()
     {
-      $showbizs = ShowBiz::take(22)->get();
-
-      return view('showbizs', [
-        'showbizs' => $showbizs,
-      ]);
+      return ShowBiz::take(22)->get();
     }
 
-    public function show($showbiz)
+    public function show(ShowBiz $showbiz)
     {
-      $showbiz = ShowBiz::find($showbiz);
-
-      return view('showbiz', [
-        'showbiz' => $showbiz,
-      ]);
+      return $showbiz;
     }
 }

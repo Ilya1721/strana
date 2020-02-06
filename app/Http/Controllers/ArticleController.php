@@ -9,19 +9,36 @@ class ArticleController extends Controller
 {
     public function index()
     {
-      $articles = Article::take(22)->get();
-
-      return view('articles', [
-        'articles' => $articles,
-      ]);
+      return Article::take(22)->get();
     }
 
-    public function show($article)
+    public function show(Article $article)
     {
-      $article = Article::find($article);
+      return $article;
+    }
 
-      return view('article', [
-        'article' => $article,
-      ]);
+    public function header()
+    {
+      return Article::take(4)->get();
+    }
+
+    public function footer_finance()
+    {
+      return Article::take(4)->get();
+    }
+
+    public function footer_pick()
+    {
+      return Article::take(4)->get();
+    }
+
+    public function right_bar()
+    {
+      return Article::take(1)->get();
+    }
+
+    public function private()
+    {
+      return Article::take(1)->get();
     }
 }
