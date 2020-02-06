@@ -9,19 +9,16 @@ class NewsController extends Controller
 {
     public function index()
     {
-      $reports = Report::take(22)->get();
-
-      return view('news', [
-        'reports' => $reports,
-      ]);
+      return Report::take(22)->get();
     }
 
-    public function show($report)
+    public function show(Report $report)
     {
-      $report = Report::find($report);
+      return $report;
+    }
 
-      return view('report', [
-        'report' => $report,
-      ]);
+    public function right_bar()
+    {
+      return Report::take(5)->get();
     }
 }

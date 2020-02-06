@@ -2,17 +2,8 @@
 
 @section('content')
 <div class="news-grid">
-  <div class="left-side">
-    @foreach($attacks as $attack)
-    <div class="content-block">
-      <p class="date">Сегодня, 14:32</p>
-      <p class="text">
-        <a href="/ataka-na-stranu/{{ $attack->id }}">
-          {{ $attack->title }}
-        </a>
-      </p>
-    </div>
-    @endforeach
+  <div id="attack" class="left-side">
+
   </div>
   <div class="right-side">
     @yield('right_bar', View::make('layouts.right_bar'))

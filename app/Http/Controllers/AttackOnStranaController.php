@@ -9,19 +9,11 @@ class AttackOnStranaController extends Controller
 {
     public function index()
     {
-      $attacks = AtakaNaStranu::take(22)->get();
-
-      return view('attacks', [
-        'attacks' => $attacks,
-      ]);
+      return AtakaNaStranu::take(22)->get();
     }
 
-    public function show($attack)
+    public function show(AtakaNaStranu $attack)
     {
-      $attack = AtakaNaStranu::find($attack);
-
-      return view('attack', [
-        'attack' => $attack,
-      ]);
+      return $attack;
     }
 }

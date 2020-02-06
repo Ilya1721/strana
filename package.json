@@ -11,21 +11,34 @@
         "sass": "node-sass -w resources/sass/ -o public/css/ --recursive"
     },
     "devDependencies": {
-        "@babel/preset-react": "^7.0.0",
+        "@babel/core": "^7.1.6",
+        "@babel/preset-react": "^7.8.3",
         "axios": "^0.19",
+        "babel": {
+            "plugins": [
+                "@babel/plugin-proposal-class-properties"
+            ],
+            "presets": [
+                "@babel/preset-env",
+                "@babel/preset-react"
+            ]
+        },
         "browser-sync": "^2.26.7",
-        "browser-sync-webpack-plugin": "^2.0.1",
+        "browser-sync-webpack-plugin": "^2.2.2",
         "cross-env": "^5.2.1",
         "laravel-mix": "^5.0.1",
         "live-server": "^1.2.1",
         "lodash": "^4.17.13",
         "node-sass": "^4.13.1",
-        "react": "^16.2.0",
-        "react-dom": "^16.2.0",
+        "react": "^16.7.0",
+        "react-dom": "^16.7.0",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^8.0.0",
         "webpack": "^4.41.5",
         "webpack-dev-server": "^3.10.1"
+    },
+    "dependencies": {
+        "react-router-dom": "^5.1.2"
     }
 }

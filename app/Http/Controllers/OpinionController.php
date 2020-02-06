@@ -9,19 +9,21 @@ class OpinionController extends Controller
 {
     public function index()
     {
-      $opinions = Opinion::take(16)->get();
-
-      return view('opinions', [
-        'opinions' => $opinions,
-      ]);
+      return Opinion::with('journalist')->take(16)->get();
     }
 
-    public function show($opinion)
+    public function show(Opinion $opinion)
     {
-      $opinion = Opinion::find($opinion);
+      return $opinion;
+    }
 
-      return view('opinion', [
-        'opinion' => $opinion,
-      ]);
+    public function header()
+    {
+      return Opinion::with('journalist')->take(2)->get();
+    }
+
+    public function footer()
+    {
+      return Opinion::with('journalist')->take(4)->get();
     }
 }
